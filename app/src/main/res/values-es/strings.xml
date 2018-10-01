@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cambio divisas</string>
+    <string name="main_amount">Cantidad</string>
+    <string name="main_dollar">Dólar</string>
+    <string name="main_euro">Euro</string>
+    <string name="main_pound">Libra</string>
+    <string name="main_btnExchangeText">Cambiar</string>
+    <string name="main_txtFrom">Moneda origen</string>
+    <string name="main_txtTo">Moneda destino</string>
+    <string name="txtAmount_initial_text">0.00</string>
+</resources>
