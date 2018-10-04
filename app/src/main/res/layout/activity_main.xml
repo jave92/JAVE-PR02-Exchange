@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- USA Code -> Reformat code PARA DEJAR EL CÓDIGO BONITO -->
+<!-- NO USES LITERALES DE CANTIDAD COMO 8dp. DEFINE RECURSOS DE DIMENSIÓN -->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +10,8 @@
         tools:context=".MainActivity"
         android:orientation="vertical">
 
+    <!-- USA EL ATRIBUTO android:labelFor PARA INDICAR QUE EL TextView ACTÚA COMO LABEL
+         DEL QUÉ EditText -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -17,6 +21,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+    <!-- EL ATRIBUTO android:focusedByDefault SÓLO ES VÁLIDO A PARTIR DE LA API 26 -->
         <EditText
             android:id="@+id/txtAmount"
             android:layout_width="match_parent"
@@ -52,6 +57,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/main_pound"/>
+            <!-- SIEMPRE QUE USES UN ImageView DEBES DEFINIRLE EL ATRIBUTO
+            android:contentDescription CON UNA DESCRIPCIÓN TEXTUAL DE LA IMAGEN MOSTRADA -->
             <ImageView
                 android:id="@+id/imgFrom"
                 android:src="@drawable/ic_euro"
